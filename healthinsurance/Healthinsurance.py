@@ -1,11 +1,10 @@
 import pickle
-import numpy as np
 import pandas as pd
 
 class HealthInsurance (object):
     
     def __init__( self ):
-        self.home_path = r'C:\Users\Matheus\Documents\projects\propensao_de_compra'
+        self.home_path = 'C:/Users/Matheus/Documents/projects/propensao_de_compra/'
         self.annual_premium_scaler =            pickle.load( open( self.home_path + 'features/annual_premium_scaler.pkl' ) )
         self.age_scaler =                       pickle.load( open( self.home_path + 'features/age_scaler.pkl' ) ) 
         self.vintage_scaler =                   pickle.load( open( self.home_path + 'features/vintage_scaler.pkl' ) ) 
